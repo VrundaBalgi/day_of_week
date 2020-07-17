@@ -67,10 +67,12 @@ Input parameters: date: date entered by user
 Return type: void
 Description: It determines the day of the week*/
 
-void find_dayofweek(int date,int mcode,int yy,int cent_code)
+void find_dayofweek(int date,int mcode,int yy,int cent_code,int leap)
 {
     int day_code;
     day_code = date+mcode+yy+(yy/4)+cent_code;
+    if(leap==1)
+        day_code = day_code-1;
     day_code = day_code%7;
     switch(day_code)
     {
