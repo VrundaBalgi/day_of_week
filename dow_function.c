@@ -35,18 +35,18 @@ void find_month_cent_codes(int month,int cc,int *mcode,int *cent_code)
 {
     switch(month)
     {
-        case 1: *mcode = 0; break;
-        case 2: *mcode = 3; break;
-        case 3: *mcode = 3; break;
-        case 4: *mcode = 1; break;
-        case 5: *mcode = 6; break;
-        case 6: *mcode = 4; break;
-        case 7: *mcode = 6; break;
-        case 8: *mcode = 2; break;
-        case 9: *mcode = 5; break;
-        case 10: *mcode = 0; break;
-        case 11: *mcode = 3; break;
-        case 12: *mcode = 5; break;
+        case 1: *mcode = 1; break;
+        case 2: *mcode = 4; break;
+        case 3: *mcode = 4; break;
+        case 4: *mcode = 0; break;
+        case 5: *mcode = 2; break;
+        case 6: *mcode = 5; break;
+        case 7: *mcode = 0; break;
+        case 8: *mcode = 3; break;
+        case 9: *mcode = 6; break;
+        case 10: *mcode = 1; break;
+        case 11: *mcode = 4; break;
+        case 12: *mcode = 6; break;
     }
 
     switch(cc)
@@ -74,12 +74,12 @@ void find_dayofweek(int date,int mcode,int yy,int cent_code)
     day_code = day_code%7;
     switch(day_code)
     {
-        case 0: printf("\nDay is Sunday"); break;
-        case 1: printf("\nDay is Monday"); break;
-        case 2: printf("\nDay is Tuesday"); break;
-        case 3: printf("\nDay is Wednesday"); break;
-        case 4: printf("\nDay is Thursday"); break;
-        case 5: printf("\nDay is Friday"); break;
-        case 6: printf("\nDay is Saturday"); break;
+        case 1: printf("\nDay is Sunday"); break;
+        case 2: printf("\nDay is Monday"); break;
+        case 3: printf("\nDay is Tuesday"); break;
+        case 4: printf("\nDay is Wednesday"); break;
+        case 5: printf("\nDay is Thursday"); break;
+        case 6: printf("\nDay is Friday"); break;
+        case 0: printf("\nDay is Saturday"); break;
     }
 }
